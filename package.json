@@ -1,7 +1,8 @@
 {
-  "name": "colm2026-situated-interaction-website",
+  "name": "learning-situated-interaction-site",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
@@ -11,8 +12,7 @@
     "@vitejs/plugin-react": "latest",
     "vite": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "lucide-react": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {}
 }

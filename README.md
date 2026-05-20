@@ -1,20 +1,16 @@
-# Learning from Situated Interaction Website
+# Learning from Situated Interaction
 
-Minimal workshop website scaffold for COLM 2026.
+Minimal website for the COLM 2026 workshop.
 
-## Pages
-
-- Home
-- CFP
-- Schedule
-- Speakers
-- Organizers
-- Submissions
-- Contact
-
-## Development
+## Run locally
 
 ```bash
 npm install
 npm run dev
+```
+
+## Build
+
+```bash
+npm run build
 ```
