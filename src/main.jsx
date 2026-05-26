@@ -22,7 +22,6 @@ function App() {
             {sections.map((section) => (
               <a key={section.id} href={`#${section.id}`}>{section.label}</a>
             ))}
-            {/* <a href="https://colmweb.org/index.html" className="btn btn-primary">Register</a> */}
           </div>
         </nav>
       </header>
@@ -33,7 +32,6 @@ function App() {
           <div className="container">
             <p className="eyebrow">A Workshop at COLM 2026</p>
             <h1>{WORKSHOP_NAME}</h1>
-            {/* <p className="subtitle">Exploring how language models learn and interact within physical and digital environments.</p> */}
             
             <div className="logistics-bar">
               <div className="logistics-item">
@@ -46,7 +44,6 @@ function App() {
 
             <div className="hero-actions">
               <a href="https://colmweb.org/index.html" className="btn btn-primary">Register for COLM 2026 ↗</a>
-              {/* <a href="https://openreview.net" className="btn btn-outline">Submit via OpenReview ↗</a> */}
             </div>
           </div>
         </section>
@@ -64,7 +61,6 @@ function App() {
                   This workshop studies how embodied multi-turn interaction with environments, humans, and other agents can serve as a learning signal for language models.
                   We bring together researchers from language modeling, NLP, embodied AI, robotics, web agents, and multi-agent systems (communities that often study related problems but publish in separate venues). 
                   Our central question is how interaction can play a fundamental role in the problem of language modeling itself.
-
                 </p>
               </div>
             </div>
@@ -130,7 +126,6 @@ function App() {
                   <td>October 9, 2026</td>
                   <td><span className="status-badge">N/A</span></td>
                 </tr>
-
               </tbody>
             </table>
           </div>
@@ -142,19 +137,7 @@ function App() {
             <div className="section-header">
               <h2>Schedule</h2>
             </div>
-            <p>TBD</p>
-            {/* <div className="schedule-list">
-              <ScheduleItem time="09:00 - 09:15" title="Opening Remarks & Welcome" />
-              <ScheduleItem time="09:15 - 10:00" title="Keynote Talk 1" speaker="TBD" />
-              <ScheduleItem time="10:00 - 10:45" title="Oral Presentations (Session I)" />
-              <ScheduleItem time="10:45 - 11:15" title="Coffee Break & Poster Session I" />
-              <ScheduleItem time="11:15 - 12:00" title="Keynote Talk 2" speaker="TBD" />
-              <ScheduleItem time="12:00 - 13:30" title="Lunch Break" />
-              <ScheduleItem time="13:30 - 14:15" title="Panel Discussion" description="Future Trajectories in Language Modeling" />
-              <ScheduleItem time="14:15 - 15:30" title="Poster Session II & Social Mixer" />
-              <ScheduleItem time="15:30 - 16:15" title="Keynote Talk 3" speaker="TBD" />
-              <ScheduleItem time="16:15 - 16:30" title="Best Paper Awards & Concluding Remarks" />
-            </div> */}
+            <p style={{ textAlign: 'center' }}>TBD</p>
           </div>
         </section>
 
@@ -169,17 +152,15 @@ function App() {
               <SpeakerCard 
                 name="Been Kim" 
                 affiliation="Google Deepmind" 
-                imageUrl="img/been_kim.png" 
+                imageUrl="been_kim.png" 
                 website="https://beenkim.github.io/" 
               />
               <SpeakerCard 
                 name="Prithviraj Ammanabrolu" 
                 affiliation="UC San Diego, NVIDIA" 
-                imageUrl="img/raj.jpg" 
+                imageUrl="raj.jpg" 
                 website="https://prithvirajva.com/" 
               />
-              {/* <SpeakerCard name="Speaker Name" affiliation="Institution" />
-              <SpeakerCard name="Speaker Name" affiliation="Institution" /> */}
             </div>
           </div>
         </section>
@@ -196,8 +177,7 @@ function App() {
                 name="Alane Suhr" 
                 affiliation="UC Berkeley" 
                 imageUrl="alane.jpg" 
-                                website="https://www.alanesuhr.com/"
- 
+                website="https://www.alanesuhr.com/" 
               />
               <OrganizerCard 
                 name="Zineng Tang" 
@@ -208,37 +188,36 @@ function App() {
               <OrganizerCard 
                 name="Yu-Cheng Chou" 
                 affiliation="Johns Hopkins University, NVIDIA" 
-                imageUrl="img/yucheng.png" 
+                imageUrl="yucheng.png" 
                 website="https://johnson111788.github.io/" 
               />
               <OrganizerCard 
                 name="Josue Torres-Fonseca" 
                 affiliation="University of Michigan" 
-                imageUrl="img/josue.jpg" 
+                imageUrl="josue.jpg" 
                 website="https://www.josuetorresfonseca.com/" 
               />
               <OrganizerCard 
                 name="Anya Ji" 
                 affiliation="UC Berkeley" 
-                imageUrl="img/anya.jpeg" 
+                imageUrl="anya.jpeg" 
                 website="https://anya-ji.github.io/" 
               />
               <OrganizerCard 
                 name="Leena Mathur" 
                 affiliation="Carnegie Mellon University" 
-                imageUrl="img/leena.jpg" 
+                imageUrl="leena.jpg" 
                 website="https://l-mathur.github.io/" 
               />
               <OrganizerCard 
                 name="Téa Wright" 
                 affiliation="UC Berkeley" 
-                imageUrl="img/tea.jpg" 
+                imageUrl="tea.jpg" 
                 website="https://teaywright.github.io/" 
               />
-              
             </div>
 
-            <div style={{ marginTop: '64px' }}>
+            <div style={{ marginTop: '64px', textAlign: 'center' }}>
               <h3>Contact</h3>
               <p>For questions, please contact us at: <a href="mailto:colm2026.learning.interaction@gmail.com" style={{ color: 'var(--accent)', fontWeight: 600 }}>colm2026.learning.interaction@gmail.com</a></p>
             </div>
@@ -285,18 +264,6 @@ function OrganizerCard({ name, affiliation, imageUrl, website }) {
   return (
     <div className="card">
       <img className="card-img" src={imageUrl || 'https://via.placeholder.com/400'} alt={name} />
-      <div className="card-content">
-        <h3 className="card-name">
-          {website ? <a href={website} target="_blank" rel="noopener noreferrer">{name}</a> : name}
-        </h3>
-        <p className="card-sub">{affiliation}</p>
-      </div>
-    </div>
-  );
-}
-
-createRoot(document.getElementById('root')).render(<App />);
-om/400'} alt={name} />
       <div className="card-content">
         <h3 className="card-name">
           {website ? <a href={website} target="_blank" rel="noopener noreferrer">{name}</a> : name}
