@@ -195,13 +195,14 @@ function App() {
               <OrganizerCard 
                 name="Alane Suhr" 
                 affiliation="UC Berkeley" 
-                imageUrl="img/alane.jpg" 
-                website="https://www.alanesuhr.com/" 
+                imageUrl="alane.jpg" 
+                                website="https://www.alanesuhr.com/"
+ 
               />
               <OrganizerCard 
                 name="Zineng Tang" 
                 affiliation="UC Berkeley" 
-                imageUrl="img/zineng.jpg" 
+                imageUrl="zineng.jpg" 
                 website="https://zinengtang.github.io/" 
               />
               <OrganizerCard 
@@ -284,6 +285,18 @@ function OrganizerCard({ name, affiliation, imageUrl, website }) {
   return (
     <div className="card">
       <img className="card-img" src={imageUrl || 'https://via.placeholder.com/400'} alt={name} />
+      <div className="card-content">
+        <h3 className="card-name">
+          {website ? <a href={website} target="_blank" rel="noopener noreferrer">{name}</a> : name}
+        </h3>
+        <p className="card-sub">{affiliation}</p>
+      </div>
+    </div>
+  );
+}
+
+createRoot(document.getElementById('root')).render(<App />);
+om/400'} alt={name} />
       <div className="card-content">
         <h3 className="card-name">
           {website ? <a href={website} target="_blank" rel="noopener noreferrer">{name}</a> : name}
