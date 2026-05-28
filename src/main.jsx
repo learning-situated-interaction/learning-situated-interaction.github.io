@@ -176,7 +176,7 @@ function App() {
               <OrganizerCard 
                 name="Alane Suhr" 
                 affiliation="UC Berkeley" 
-                imageUrl="alane.jpg" 
+                imageUrl="alane.png" 
                 website="https://www.alanesuhr.com/" 
               />
               <OrganizerCard 
