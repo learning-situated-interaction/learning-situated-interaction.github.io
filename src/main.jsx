@@ -42,9 +42,6 @@ function App() {
               </div>
             </div>
 
-            <div className="hero-actions">
-              <a href="https://colmweb.org/index.html" className="btn btn-primary">Register for COLM 2026 ↗</a>
-            </div>
           </div>
         </section>
 
