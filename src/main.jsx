@@ -40,6 +40,9 @@ function App() {
               <div className="logistics-item">
                 San Francisco, CA
               </div>
+              <a className="logistics-item" href="mailto:colm2026.learning.interaction@gmail.com">
+                colm2026.learning.interaction@gmail.com
+              </a>
             </div>
 
           </div>
@@ -83,6 +86,7 @@ function App() {
               <h3>Submission Instructions</h3>
               <p>Please follow the official COLM 2026 LaTeX template. Submissions should be made via OpenReview. </p>
               <div className="hero-actions" style={{ marginTop: '24px' }}>
+                <a href="REPLACE_WITH_GOOGLE_DOC_URL" className="btn btn-outline" target="_blank" rel="noopener noreferrer">Submission Instructions ↗</a>
                 <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
               </div>
             </div>
@@ -217,10 +221,6 @@ function App() {
               />
             </div>
 
-            <div style={{ marginTop: '36px', textAlign: 'center' }}>
-              <h3>Contact</h3>
-              <p>For questions, please contact us at: <a href="mailto:colm2026.learning.interaction@gmail.com" style={{ color: 'var(--accent)', fontWeight: 600 }}>colm2026.learning.interaction@gmail.com</a></p>
-            </div>
           </div>
         </section>
       </main>
