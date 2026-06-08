@@ -84,9 +84,8 @@ function App() {
 
             <div className="submission-info abstract" style={{ textAlign: 'center', marginTop: '28px' }}>
               <h3>Submission Instructions</h3>
-              <p>Please follow the official COLM 2026 LaTeX template. Submissions should be made via OpenReview. </p>
+              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–8 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
               <div className="hero-actions" style={{ marginTop: '24px' }}>
-                <a href="REPLACE_WITH_GOOGLE_DOC_URL" className="btn btn-outline" target="_blank" rel="noopener noreferrer">Submission Instructions ↗</a>
                 <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
               </div>
             </div>
