@@ -82,7 +82,7 @@ function App() {
               <li><strong>Evaluation and Objectives:</strong> What benchmarks, data, and learning objectives can measure or enable causal understanding, adaptability, and pragmatic reasoning beyond passive learning or imitation?</li>
             </ul>
 
-            <div className="submission-info abstract" style={{ textAlign: 'center', marginTop: '48px' }}>
+            <div className="submission-info abstract" style={{ textAlign: 'center', marginTop: '28px' }}>
               <h3>Submission Instructions</h3>
               <p>Please follow the official COLM 2026 LaTeX template. Submissions should be made via OpenReview (Submission link coming soon). </p>
             </div>
@@ -217,7 +217,7 @@ function App() {
               />
             </div>
 
-            <div style={{ marginTop: '64px', textAlign: 'center' }}>
+            <div style={{ marginTop: '36px', textAlign: 'center' }}>
               <h3>Contact</h3>
               <p>For questions, please contact us at: <a href="mailto:colm2026.learning.interaction@gmail.com" style={{ color: 'var(--accent)', fontWeight: 600 }}>colm2026.learning.interaction@gmail.com</a></p>
             </div>
