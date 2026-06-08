@@ -84,7 +84,10 @@ function App() {
 
             <div className="submission-info abstract" style={{ textAlign: 'center', marginTop: '28px' }}>
               <h3>Submission Instructions</h3>
-              <p>Please follow the official COLM 2026 LaTeX template. Submissions should be made via OpenReview (Submission link coming soon). </p>
+              <p>Please follow the official COLM 2026 LaTeX template. Submissions should be made via OpenReview. </p>
+              <div className="hero-actions" style={{ marginTop: '24px' }}>
+                <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
+              </div>
             </div>
 
           </div>
