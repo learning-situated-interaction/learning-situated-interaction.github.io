@@ -82,7 +82,7 @@ function App() {
               <li><strong>Evaluation and Objectives:</strong> What benchmarks, data, and learning objectives can measure or enable causal understanding, adaptability, and pragmatic reasoning beyond passive learning or imitation?</li>
             </ul>
 
-            <div className="submission-info abstract" style={{ textAlign: 'center', marginTop: '28px' }}>
+            <div className="submission-info abstract" style={{ textAlign: 'left', marginTop: '28px' }}>
               <h3>Submission Instructions</h3>
               <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–8 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
               <div className="hero-actions" style={{ marginTop: '24px' }}>
