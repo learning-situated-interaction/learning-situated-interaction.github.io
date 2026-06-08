@@ -113,7 +113,7 @@ function App() {
                 </tr>
                 <tr>
                   <td><strong>Notification of Acceptance</strong></td>
-                  <td>TBD</td>
+                  <td>July 24, 2026</td>
                   <td><span className="status-badge">N/A</span></td>
                 </tr>
                 <tr>
