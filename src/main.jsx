@@ -53,7 +53,7 @@ function App() {
           <div className="container">
             <div className="section-header">
               <h2>About the Workshop</h2>
-              <div className="abstract">
+              <div className="abstract" style={{ textAlign: 'left' }}>
                 <p>
                   How should interactive experience reshape the data, objectives, and evaluations used for language modeling? 
                   Despite remarkable progress from scaling over passive corpora, the projected exhaustion of high-quality text poses a growing bottleneck. 
