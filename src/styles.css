@@ -174,7 +174,7 @@ body::after {
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.85rem;
+  font-size: 1.275rem;
   font-weight: 800;
   animation: fadeIn 0.8s ease-out;
 }
