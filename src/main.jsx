@@ -30,7 +30,7 @@ function App() {
         {/* Hero Section */}
         <section className="hero">
           <div className="container">
-            <p className="eyebrow">A Workshop at COLM 2026</p>
+            <p className="eyebrow">@COLM 2026</p>
             <h1>{WORKSHOP_NAME}</h1>
             
             <div className="logistics-bar">
