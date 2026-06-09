@@ -18,6 +18,7 @@ function App() {
     <>
       <header className="site-header">
         <nav className="nav" aria-label="Main navigation">
+          <a href="#top" className="brand">LSEI@COLM2026</a>
           <div className="nav-links">
             {sections.map((section) => (
               <a key={section.id} href={`#${section.id}`}>{section.label}</a>
@@ -30,19 +31,14 @@ function App() {
         {/* Hero Section */}
         <section className="hero">
           <div className="container">
-            <p className="eyebrow">@COLM 2026</p>
-            <h1>{WORKSHOP_NAME}</h1>
-            
-            <div className="logistics-bar">
-              <div className="logistics-item">
-                October 9, 2026
-              </div>
-              <div className="logistics-item">
-                San Francisco, CA
-              </div>
-              <a className="logistics-item" href="mailto:colm2026.learning.interaction@gmail.com">
-                colm2026.learning.interaction@gmail.com
-              </a>
+            <p className="eyebrow">@COLM 2026 -- October 9, 2026 - San Francisco, CA</p>
+            <h1>Learning from<br />Situated and Embodied Interaction</h1>
+
+            <p className="contact-line">Contact: colm2026.learning.interaction@gmail.com</p>
+
+            <div className="hero-actions hero-buttons">
+              <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary btn-sm" style={{ background: '#8A5BD8' }} target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScd6hc9fwp2koFVkPYrhelJknXajro4CS-hr6lOfsupG_PDKw/viewform?usp=publish-editor" className="btn btn-outline btn-sm" style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">Become a Reviewer ↗</a>
             </div>
 
           </div>
@@ -76,18 +72,37 @@ function App() {
             </div>
 
             <ul className="topics-list">
-              <li><strong>Situated Interaction (Agent–Environment):</strong> How can interaction in web, simulated, or physical environments provide training signals that improve language modeling, grounding, and adaptation? </li>
-              <li><strong>Multi-Agent Interaction:</strong> How can multi-agent interaction, self-play, or communicative success improve language models' pragmatic reasoning and social understanding? </li>
-              <li><strong>Cooperative Interaction:</strong> How can human-agent interaction and human-in-the-loop feedback improve language models in grounded communication and collaborative settings? </li>
-              <li><strong>Evaluation and Objectives:</strong> What benchmarks, data, and learning objectives can measure or enable causal understanding, adaptability, and pragmatic reasoning beyond passive learning or imitation?</li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Situated Interaction (Agent–Environment)</strong>
+                  <span className="topic-desc">How can interaction in web, simulated, or physical environments provide training signals that improve language modeling, grounding, and adaptation?</span>
+                </div>
+              </li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Multi-Agent Interaction</strong>
+                  <span className="topic-desc">How can multi-agent interaction, self-play, or communicative success improve language models' pragmatic reasoning and social understanding?</span>
+                </div>
+              </li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Cooperative Interaction</strong>
+                  <span className="topic-desc">How can human-agent interaction and human-in-the-loop feedback improve language models in grounded communication and collaborative settings?</span>
+                </div>
+              </li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Evaluation and Objectives</strong>
+                  <span className="topic-desc">What benchmarks, data, and learning objectives can measure or enable causal understanding, adaptability, and pragmatic reasoning beyond passive learning or imitation?</span>
+                </div>
+              </li>
             </ul>
 
             <div className="submission-info abstract" style={{ textAlign: 'left', marginTop: '28px' }}>
-              <h3>Submission Instructions</h3>
-              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–8 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
-              <div className="hero-actions" style={{ marginTop: '24px' }}>
-                <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
+              <div className="submission-head">
+                <h3>Submission Instructions</h3>
               </div>
+              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–8 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
             </div>
 
           </div>
@@ -100,37 +115,34 @@ function App() {
               <h2>Important Dates</h2>
             </div>
             
-            <table className="data-table" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <div style={{ maxWidth: '850px', margin: '0 auto' }}>
+            <table className="data-table" style={{ margin: '0' }}>
               <thead>
                 <tr>
                   <th>Milestone</th>
                   <th>Date (AoE)</th>
-                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Submission Deadline</strong></td>
                   <td>TBD</td>
-                  <td><span className="status-badge status-open">Pending</span></td>
                 </tr>
                 <tr>
                   <td><strong>Notification of Acceptance</strong></td>
                   <td>July 24, 2026</td>
-                  <td><span className="status-badge">N/A</span></td>
                 </tr>
                 <tr>
                   <td><strong>Camera-Ready Due</strong></td>
                   <td>TBD</td>
-                  <td><span className="status-badge">N/A</span></td>
                 </tr>
                 <tr>
                   <td><strong>Workshop Day</strong></td>
                   <td>October 9, 2026</td>
-                  <td><span className="status-badge">N/A</span></td>
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
 
@@ -140,7 +152,7 @@ function App() {
             <div className="section-header">
               <h2>Schedule</h2>
             </div>
-            <p style={{ textAlign: 'center' }}>TBD</p>
+            <p style={{ maxWidth: '850px', margin: '0 auto', textAlign: 'left' }}>TBD</p>
           </div>
         </section>
 
@@ -162,9 +174,11 @@ function App() {
                 name="Prithviraj Ammanabrolu" 
                 affiliation="UC San Diego, NVIDIA" 
                 imageUrl="raj.jpg" 
-                website="https://prithvirajva.com/" 
+                website="https://prithvirajva.com/"
               />
             </div>
+
+            <p className="speakers-note">More speakers to be announced.</p>
           </div>
         </section>
 
