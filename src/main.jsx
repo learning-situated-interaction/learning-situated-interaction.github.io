@@ -226,11 +226,17 @@ function App() {
                 imageUrl="leena.jpg" 
                 website="https://l-mathur.github.io/" 
               />
-              <OrganizerCard 
-                name="Téa Wright" 
-                affiliation="UC Berkeley" 
-                imageUrl="tea.jpg" 
-                website="https://teaywright.github.io/" 
+              <OrganizerCard
+                name="Téa Wright"
+                affiliation="UC Berkeley"
+                imageUrl="tea.jpg"
+                website="https://teaywright.github.io/"
+              />
+              <OrganizerCard
+                name="Joyce Chai"
+                affiliation="University of Michigan"
+                imageUrl="joyce.jpg"
+                website="https://web.eecs.umich.edu/~chaijy/"
               />
             </div>
 
