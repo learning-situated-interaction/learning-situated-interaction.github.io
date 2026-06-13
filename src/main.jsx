@@ -170,11 +170,17 @@ function App() {
                 imageUrl="been_kim.png" 
                 website="https://beenkim.github.io/" 
               />
-              <SpeakerCard 
-                name="Prithviraj Ammanabrolu" 
-                affiliation="UC San Diego, NVIDIA" 
-                imageUrl="raj.jpg" 
+              <SpeakerCard
+                name="Prithviraj Ammanabrolu"
+                affiliation="UC San Diego, NVIDIA"
+                imageUrl="raj.jpg"
                 website="https://prithvirajva.com/"
+              />
+              <SpeakerCard
+                name="Noam Brown"
+                affiliation="OpenAI"
+                imageUrl="noam.jpg"
+                website="https://www.noambrown.com/"
               />
             </div>
 
