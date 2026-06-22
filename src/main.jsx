@@ -126,7 +126,7 @@ function App() {
               <tbody>
                 <tr>
                   <td><strong>Submission Deadline</strong></td>
-                  <td>June 30, 2026</td>
+                  <td>June 30, 2026 <span className="date-note">(tentative)</span></td>
                 </tr>
                 <tr>
                   <td><strong>Notification of Acceptance</strong></td>
@@ -181,6 +181,18 @@ function App() {
                 affiliation="OpenAI"
                 imageUrl="noam.jpg"
                 website="https://www.noambrown.com/"
+              />
+              <SpeakerCard
+                name="Diyi Yang"
+                affiliation="Stanford University"
+                imageUrl="diyi.jpg"
+                website="https://cs.stanford.edu/~diyiy/"
+              />
+              <SpeakerCard
+                name="Heng Ji"
+                affiliation="University of Illinois Urbana-Champaign"
+                imageUrl="hengji.jpg"
+                website="https://blender.cs.illinois.edu/hengji.html"
               />
             </div>
 
