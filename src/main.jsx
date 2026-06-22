@@ -182,6 +182,18 @@ function App() {
                 imageUrl="noam.jpg"
                 website="https://www.noambrown.com/"
               />
+              <SpeakerCard
+                name="Diyi Yang"
+                affiliation="Stanford University"
+                imageUrl="diyi.jpg"
+                website="https://cs.stanford.edu/~diyiy/"
+              />
+              <SpeakerCard
+                name="Heng Ji"
+                affiliation="University of Illinois Urbana-Champaign"
+                imageUrl="hengji.jpg"
+                website="https://blender.cs.illinois.edu/hengji.html"
+              />
             </div>
 
             <p className="speakers-note">More speakers to be announced.</p>
