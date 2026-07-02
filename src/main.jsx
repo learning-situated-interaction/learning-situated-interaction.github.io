@@ -126,7 +126,7 @@ function App() {
               <tbody>
                 <tr>
                   <td><strong>Submission Deadline</strong></td>
-                  <td>June 30, 2026 <span className="date-note">(tentative)</span></td>
+                  <td><del>June 30, 2026</del> July 12, 2026 <span className="date-note">(tentative)</span></td>
                 </tr>
                 <tr>
                   <td><strong>Notification of Acceptance</strong></td>
