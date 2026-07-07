@@ -102,7 +102,7 @@ function App() {
               <div className="submission-head">
                 <h3>Submission Instructions</h3>
               </div>
-              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–8 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
+              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–9 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
             </div>
 
           </div>
