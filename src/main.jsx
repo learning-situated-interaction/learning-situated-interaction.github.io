@@ -221,12 +221,6 @@ function App() {
                 website="https://zinengtang.github.io/" 
               />
               <OrganizerCard 
-                name="Yu-Cheng Chou" 
-                affiliation="Johns Hopkins University, NVIDIA" 
-                imageUrl="yucheng.png" 
-                website="https://johnson111788.github.io/" 
-              />
-              <OrganizerCard 
                 name="Josue Torres-Fonseca" 
                 affiliation="University of Michigan" 
                 imageUrl="josue.jpg" 
