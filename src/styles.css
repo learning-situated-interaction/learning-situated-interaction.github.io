@@ -574,3 +574,7 @@ a.logistics-item:hover {
   background: var(--accent);
   border-radius: 999px;
 }
+
+.data-table a {
+  color: var(--accent);
+}
