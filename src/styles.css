@@ -404,7 +404,9 @@ a.logistics-item:hover {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
+  /* 170px cards: the 850px container fits at most four per row */
+  grid-template-columns: repeat(auto-fill, 170px);
+  justify-content: start;
   gap: 18px;
   max-width: 850px;
   margin: 0 auto;
@@ -481,6 +483,10 @@ a.logistics-item:hover {
   .logistics-bar { flex-direction: column; gap: 12px; }
   h1 { font-size: 3.5rem; }
   .hero { padding: 40px 0 24px; }
+}
+
+@media (max-width: 480px) {
+  .grid-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .session-divider td {
