@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
+import { PAPERS } from './papers';
 
 const WORKSHOP_NAME = "Learning from Situated and Embodied Interaction";
 
@@ -9,11 +10,33 @@ const sections = [
   { id: 'schedule', label: 'Schedule' },
   { id: 'speakers', label: 'Speakers' },
   { id: 'organizers', label: 'Organizers' },
-  { id: 'cfp', label: 'Call for Papers' },
+  { id: 'papers', label: 'Papers' },
   { id: 'dates', label: 'Dates' },
 ];
 
+const PAPER_TABS = [
+  { id: 'accepted', label: 'Accepted Papers' },
+  { id: 'cfp', label: 'Call for Papers' },
+];
+
+function tabFromHash() {
+  return window.location.hash === '#cfp' ? 'cfp' : 'accepted';
+}
+
 function App() {
+  const [paperTab, setPaperTab] = useState(tabFromHash);
+
+  useEffect(() => {
+    const onHash = () => {
+      if (['#papers', '#accepted-papers', '#cfp'].includes(window.location.hash)) setPaperTab(tabFromHash());
+    };
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
+
+  const orals = PAPERS.filter((p) => p.oral);
+  const posters = PAPERS.filter((p) => !p.oral);
+
   return (
     <>
       <header className="site-header">
@@ -85,8 +108,8 @@ function App() {
                 <tr><td>10:30 – 11:00</td><td>Coffee Break</td></tr>
                 <tr><td>11:00 – 12:15</td><td>Invited Talk: Heng Ji</td></tr>
                 <tr><td>12:15 – 1:15</td><td>Lunch Break</td></tr>
-                <tr><td>1:15 – 2:00</td><td>Invited Talk: Prithviraj Ammanabrolu</td></tr>
-                <tr><td>2:00 – 2:45</td><td>Oral Presentations</td></tr>
+                <tr className="session-divider"><td>1:15 – 2:00</td><td>Invited Talk: Prithviraj Ammanabrolu</td></tr>
+                <tr><td>2:00 – 2:45</td><td>Oral Presentations (<a href="#accepted-papers" onClick={() => setPaperTab('accepted')}>see accepted papers</a>)</td></tr>
                 <tr><td>2:45 – 3:15</td><td>Afternoon Break</td></tr>
                 <tr><td>3:15 – 4:00</td><td>Invited Talk: Diyi Yang</td></tr>
                 <tr><td>4:00 – 4:45</td><td>Invited Talk: Zora Wang</td></tr>
@@ -201,11 +224,48 @@ function App() {
           </div>
         </section>
 
-        {/* CFP Section */}
-        <section id="cfp" className="section">
+        {/* Papers Section */}
+        <section id="papers" className="section">
           <div className="container">
+            <span id="accepted-papers" className="anchor" />
+            <span id="cfp" className="anchor" />
             <div className="section-header">
-              <h2>Call for Papers</h2>
+              <h2>Papers</h2>
+            </div>
+
+            <div className="tabs" role="tablist">
+              {PAPER_TABS.map((t) => (
+                <button
+                  key={t.id}
+                  role="tab"
+                  aria-selected={paperTab === t.id}
+                  className={`tab${paperTab === t.id ? ' tab-active' : ''}`}
+                  onClick={() => setPaperTab(t.id)}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
+
+            {paperTab === 'accepted' ? (
+              <div role="tabpanel" className="paper-list">
+                <h3 className="tab-heading">Oral Presentations</h3>
+                <ul>
+                  {orals.map((p) => <PaperItem key={p.id} paper={p} />)}
+                </ul>
+                {posters.length > 0 && (
+                  <>
+                    <h3 className="tab-heading">Posters</h3>
+                    <ul>
+                      {posters.map((p) => <PaperItem key={p.id} paper={p} />)}
+                    </ul>
+                  </>
+                )}
+              </div>
+            ) : (
+              <div role="tabpanel">
+            <div className="section-header">
+              <h3 className="tab-heading">Call for Papers</h3>
               <p>We welcome submissions on all dimensions of learning from embodied interaction, including but not limited to: </p>
             </div>
 
@@ -242,7 +302,8 @@ function App() {
               </div>
               <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–9 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
             </div>
-
+              </div>
+            )}
           </div>
         </section>
 
@@ -290,6 +351,18 @@ function App() {
         </div>
       </footer>
     </>
+  );
+}
+
+function PaperItem({ paper }) {
+  return (
+    <li className="paper-item">
+      <div className="paper-title">
+        {paper.title}
+        {paper.oral && <span className="badge-oral">Oral</span>}
+      </div>
+      {paper.authors && <div className="paper-authors">{paper.authors}</div>}
+    </li>
   );
 }
 
