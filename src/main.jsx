@@ -108,7 +108,7 @@ function App() {
                 <tr><td>11:00 – 12:15</td><td>Invited Talk: Heng Ji</td></tr>
                 <tr><td>12:15 – 1:15</td><td>Lunch Break</td></tr>
                 <tr className="session-divider"><td>1:15 – 2:00</td><td>Invited Talk: Prithviraj Ammanabrolu</td></tr>
-                <tr><td>2:00 – 2:45</td><td>Oral Presentations (<a href="#accepted-papers" onClick={() => setPaperTab('accepted')}>see accepted papers</a>)</td></tr>
+                <tr><td>2:00 – 2:45</td><td>Oral Presentations</td></tr>
                 <tr><td>2:45 – 3:15</td><td>Afternoon Break</td></tr>
                 <tr><td>3:15 – 4:00</td><td>Invited Talk: Diyi Yang</td></tr>
                 <tr><td>4:00 – 4:45</td><td>Invited Talk: Zora Wang</td></tr>
@@ -116,6 +116,13 @@ function App() {
                 <tr><td>5:00 – 6:00</td><td>Poster Session</td></tr>
               </tbody>
             </table>
+            <a
+              href="#accepted-papers"
+              className="btn btn-outline btn-sm schedule-papers-link"
+              onClick={() => setPaperTab('accepted')}
+            >
+              See accepted papers →
+            </a>
             </div>
           </div>
         </section>
