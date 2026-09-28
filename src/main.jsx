@@ -287,7 +287,7 @@ function App() {
               </li>
             </ul>
 
-            <div className="submission-info abstract" style={{ textAlign: 'left', marginTop: '28px' }}>
+            <div className="submission-info abstract" style={{ textAlign: 'left', marginTop: '16px' }}>
               <div className="submission-head">
                 <h3>Submission Instructions</h3>
               </div>
