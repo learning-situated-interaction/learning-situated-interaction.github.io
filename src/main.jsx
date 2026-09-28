@@ -6,11 +6,11 @@ const WORKSHOP_NAME = "Learning from Situated and Embodied Interaction";
 
 const sections = [
   { id: 'about', label: 'About' },
-  { id: 'cfp', label: 'Call for Papers' },
-  { id: 'dates', label: 'Dates' },
   { id: 'schedule', label: 'Schedule' },
   { id: 'speakers', label: 'Speakers' },
   { id: 'organizers', label: 'Organizers' },
+  { id: 'cfp', label: 'Call for Papers' },
+  { id: 'dates', label: 'Dates' },
 ];
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
             <p className="contact-line">Contact: colm2026.learning.interaction@gmail.com</p>
 
             <div className="hero-actions hero-buttons">
-              <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary btn-sm" style={{ background: '#8A5BD8' }} target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScd6hc9fwp2koFVkPYrhelJknXajro4CS-hr6lOfsupG_PDKw/viewform?usp=publish-editor" className="btn btn-outline btn-sm" style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">Become a Reviewer ↗</a>
+              <span className="btn btn-primary btn-sm btn-disabled" style={{ background: '#8A5BD8' }} aria-disabled="true" title="Submissions are closed">Submit on OpenReview</span>
+              <span className="btn btn-outline btn-sm btn-disabled" style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }} aria-disabled="true" title="Reviewer recruitment is closed">Become a Reviewer</span>
             </div>
 
           </div>
@@ -63,89 +63,6 @@ function App() {
           </div>
         </section>
 
-        {/* CFP Section */}
-        <section id="cfp" className="section">
-          <div className="container">
-            <div className="section-header">
-              <h2>Call for Papers</h2>
-              <p>We welcome submissions on all dimensions of learning from embodied interaction, including but not limited to: </p>
-            </div>
-
-            <ul className="topics-list">
-              <li>
-                <div className="topic-body">
-                  <strong className="topic-title">Situated Interaction (Agent–Environment)</strong>
-                  <span className="topic-desc">How can interaction in web, simulated, or physical environments provide training signals that improve language modeling, grounding, and adaptation?</span>
-                </div>
-              </li>
-              <li>
-                <div className="topic-body">
-                  <strong className="topic-title">Multi-Agent Interaction</strong>
-                  <span className="topic-desc">How can multi-agent interaction, self-play, or communicative success improve language models' pragmatic reasoning and social understanding?</span>
-                </div>
-              </li>
-              <li>
-                <div className="topic-body">
-                  <strong className="topic-title">Cooperative Interaction</strong>
-                  <span className="topic-desc">How can human-agent interaction and human-in-the-loop feedback improve language models in grounded communication and collaborative settings?</span>
-                </div>
-              </li>
-              <li>
-                <div className="topic-body">
-                  <strong className="topic-title">Evaluation and Objectives</strong>
-                  <span className="topic-desc">What benchmarks, data, and learning objectives can measure or enable causal understanding, adaptability, and pragmatic reasoning beyond passive learning or imitation?</span>
-                </div>
-              </li>
-            </ul>
-
-            <div className="submission-info abstract" style={{ textAlign: 'left', marginTop: '28px' }}>
-              <div className="submission-head">
-                <h3>Submission Instructions</h3>
-              </div>
-              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–9 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Dates Section */}
-        <section id="dates" className="section">
-          <div className="container">
-            <div className="section-header">
-              <h2>Important Dates</h2>
-            </div>
-            
-            <div style={{ maxWidth: '850px', margin: '0 auto' }}>
-            <table className="data-table" style={{ margin: '0' }}>
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Date (AoE)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Submission Deadline</strong></td>
-                  <td><del>June 30, 2026</del> July 14, 2026</td>
-                </tr>
-                <tr>
-                  <td><strong>Notification of Acceptance</strong></td>
-                  <td>July 24, 2026</td>
-                </tr>
-                <tr>
-                  <td><strong>Camera-Ready Due</strong></td>
-                  <td>TBD</td>
-                </tr>
-                <tr>
-                  <td><strong>Workshop Day</strong></td>
-                  <td>October 9, 2026</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-          </div>
-        </section>
-
         {/* Schedule Section */}
         <section id="schedule" className="section">
           <div className="container">
@@ -163,16 +80,16 @@ function App() {
               </thead>
               <tbody>
                 <tr><td>8:45 – 9:00</td><td>Opening Remarks</td></tr>
-                <tr><td>9:00 – 9:45</td><td><strong>Invited Talk:</strong> Noam Brown</td></tr>
-                <tr><td>9:45 – 10:30</td><td><strong>Invited Talk:</strong> Been Kim</td></tr>
+                <tr><td>9:00 – 9:45</td><td>Invited Talk: Noam Brown</td></tr>
+                <tr><td>9:45 – 10:30</td><td>Invited Talk: Been Kim</td></tr>
                 <tr><td>10:30 – 11:00</td><td>Coffee Break</td></tr>
-                <tr><td>11:00 – 12:15</td><td><strong>Invited Talk:</strong> Heng Ji</td></tr>
+                <tr><td>11:00 – 12:15</td><td>Invited Talk: Heng Ji</td></tr>
                 <tr><td>12:15 – 1:15</td><td>Lunch Break</td></tr>
-                <tr><td>1:15 – 2:00</td><td><strong>Invited Talk:</strong> Prithviraj Ammanabrolu</td></tr>
-                <tr><td>2:00 – 2:45</td><td><strong>Oral Presentations</strong></td></tr>
+                <tr><td>1:15 – 2:00</td><td>Invited Talk: Prithviraj Ammanabrolu</td></tr>
+                <tr><td>2:00 – 2:45</td><td>Oral Presentations</td></tr>
                 <tr><td>2:45 – 3:15</td><td>Afternoon Break</td></tr>
-                <tr><td>3:15 – 4:00</td><td><strong>Invited Talk:</strong> Diyi Yang</td></tr>
-                <tr><td>4:00 – 4:45</td><td><strong>Invited Talk:</strong> Zora Wang</td></tr>
+                <tr><td>3:15 – 4:00</td><td>Invited Talk: Diyi Yang</td></tr>
+                <tr><td>4:00 – 4:45</td><td>Invited Talk: Zora Wang</td></tr>
                 <tr><td>4:45 – 5:00</td><td>Closing Remarks</td></tr>
                 <tr><td>5:00 – 6:00</td><td>Poster Session</td></tr>
               </tbody>
@@ -281,6 +198,89 @@ function App() {
               />
             </div>
 
+          </div>
+        </section>
+
+        {/* CFP Section */}
+        <section id="cfp" className="section">
+          <div className="container">
+            <div className="section-header">
+              <h2>Call for Papers</h2>
+              <p>We welcome submissions on all dimensions of learning from embodied interaction, including but not limited to: </p>
+            </div>
+
+            <ul className="topics-list">
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Situated Interaction (Agent–Environment)</strong>
+                  <span className="topic-desc">How can interaction in web, simulated, or physical environments provide training signals that improve language modeling, grounding, and adaptation?</span>
+                </div>
+              </li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Multi-Agent Interaction</strong>
+                  <span className="topic-desc">How can multi-agent interaction, self-play, or communicative success improve language models' pragmatic reasoning and social understanding?</span>
+                </div>
+              </li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Cooperative Interaction</strong>
+                  <span className="topic-desc">How can human-agent interaction and human-in-the-loop feedback improve language models in grounded communication and collaborative settings?</span>
+                </div>
+              </li>
+              <li>
+                <div className="topic-body">
+                  <strong className="topic-title">Evaluation and Objectives</strong>
+                  <span className="topic-desc">What benchmarks, data, and learning objectives can measure or enable causal understanding, adaptability, and pragmatic reasoning beyond passive learning or imitation?</span>
+                </div>
+              </li>
+            </ul>
+
+            <div className="submission-info abstract" style={{ textAlign: 'left', marginTop: '28px' }}>
+              <div className="submission-head">
+                <h3>Submission Instructions</h3>
+              </div>
+              <p>Submissions should follow the official COLM 2026 LaTeX template and contain 4–9 pages of main text (references excluded), with supplementary material and appendices not counting toward the limit. Reviewing is double-blind, so please anonymize your submission. We welcome ongoing, published, unpublished, just-accepted, and under-review works; all submissions are non-archival and will not appear in formal proceedings. Please submit via OpenReview.</p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* Dates Section */}
+        <section id="dates" className="section">
+          <div className="container">
+            <div className="section-header">
+              <h2>Important Dates</h2>
+            </div>
+            
+            <div style={{ maxWidth: '850px', margin: '0 auto' }}>
+            <table className="data-table" style={{ margin: '0' }}>
+              <thead>
+                <tr>
+                  <th>Milestone</th>
+                  <th>Date (AoE)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Submission Deadline</strong></td>
+                  <td><del>June 30, 2026</del> July 14, 2026</td>
+                </tr>
+                <tr>
+                  <td><strong>Notification of Acceptance</strong></td>
+                  <td>July 24, 2026</td>
+                </tr>
+                <tr>
+                  <td><strong>Camera-Ready Due</strong></td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td><strong>Workshop Day</strong></td>
+                  <td>October 9, 2026</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
           </div>
         </section>
       </main>

@@ -482,3 +482,9 @@ a.logistics-item:hover {
   h1 { font-size: 3.5rem; }
   .hero { padding: 100px 0 60px; }
 }
+
+.btn-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
