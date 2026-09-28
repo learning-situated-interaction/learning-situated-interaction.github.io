@@ -34,9 +34,6 @@ function App() {
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
-  const orals = PAPERS.filter((p) => p.oral);
-  const posters = PAPERS.filter((p) => !p.oral);
-
   return (
     <>
       <header className="site-header">
@@ -59,10 +56,12 @@ function App() {
 
             <p className="contact-line">Contact: colm2026.learning.interaction@gmail.com</p>
 
+            {/* Submissions and reviewer recruitment are closed.
             <div className="hero-actions hero-buttons">
-              <span className="btn btn-primary btn-sm btn-disabled" style={{ background: '#8A5BD8' }} aria-disabled="true" title="Submissions are closed">Submit on OpenReview</span>
-              <span className="btn btn-outline btn-sm btn-disabled" style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }} aria-disabled="true" title="Reviewer recruitment is closed">Become a Reviewer</span>
+              <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/LSEI" className="btn btn-primary btn-sm" style={{ background: '#8A5BD8' }} target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScd6hc9fwp2koFVkPYrhelJknXajro4CS-hr6lOfsupG_PDKw/viewform?usp=publish-editor" className="btn btn-outline btn-sm" style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">Become a Reviewer ↗</a>
             </div>
+            */}
 
           </div>
         </section>
@@ -249,23 +248,15 @@ function App() {
 
             {paperTab === 'accepted' ? (
               <div role="tabpanel" className="paper-list">
-                <h3 className="tab-heading">Oral Presentations</h3>
                 <ul>
-                  {orals.map((p) => <PaperItem key={p.id} paper={p} />)}
+                  {PAPERS.map((p) => <PaperItem key={p.id} paper={p} />)}
                 </ul>
-                {posters.length > 0 && (
-                  <>
-                    <h3 className="tab-heading">Posters</h3>
-                    <ul>
-                      {posters.map((p) => <PaperItem key={p.id} paper={p} />)}
-                    </ul>
-                  </>
-                )}
               </div>
             ) : (
               <div role="tabpanel">
             <div className="section-header">
-              <h3 className="tab-heading">Call for Papers</h3>
+              <h3 className="tab-heading">Call for Papers <span className="badge-closed">Closed</span></h3>
+              <p className="closed-note">Submissions for LSEI 2026 are closed. The call below is kept for reference.</p>
               <p>We welcome submissions on all dimensions of learning from embodied interaction, including but not limited to: </p>
             </div>
 
@@ -323,17 +314,13 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr className="date-passed">
                   <td><strong>Submission Deadline</strong></td>
-                  <td><del>June 30, 2026</del> July 14, 2026</td>
+                  <td>July 14, 2026</td>
                 </tr>
-                <tr>
+                <tr className="date-passed">
                   <td><strong>Notification of Acceptance</strong></td>
                   <td>July 24, 2026</td>
-                </tr>
-                <tr>
-                  <td><strong>Camera-Ready Due</strong></td>
-                  <td>TBD</td>
                 </tr>
                 <tr>
                   <td><strong>Workshop Day</strong></td>

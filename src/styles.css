@@ -483,12 +483,6 @@ a.logistics-item:hover {
   .hero { padding: 100px 0 60px; }
 }
 
-.btn-disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
 .session-divider td {
   border-top: 1px dashed var(--accent-light);
   padding-top: 14px;
@@ -577,4 +571,26 @@ a.logistics-item:hover {
 
 .data-table a {
   color: var(--accent);
+}
+
+.badge-closed {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  vertical-align: middle;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.closed-note {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.date-passed td {
+  text-decoration: line-through;
+  color: var(--muted);
 }
