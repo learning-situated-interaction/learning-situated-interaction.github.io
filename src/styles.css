@@ -288,7 +288,7 @@ a.logistics-item:hover {
   max-width: 850px;
   color: var(--muted);
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .topics-list {
