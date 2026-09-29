@@ -118,7 +118,7 @@ function App() {
             </table>
             <a
               href="#accepted-papers"
-              className="btn btn-outline btn-sm schedule-papers-link"
+              className="schedule-papers-link"
               onClick={() => setPaperTab('accepted')}
             >
               See accepted papers →

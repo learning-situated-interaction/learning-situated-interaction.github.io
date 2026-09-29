@@ -577,9 +577,14 @@ a.logistics-item:hover {
 
 .schedule-papers-link {
   display: inline-block;
-  margin-top: 12px;
-  border-color: var(--accent);
+  margin-top: 10px;
+  font-weight: 600;
   color: var(--accent);
+  text-decoration: none;
+}
+
+.schedule-papers-link:hover {
+  text-decoration: underline;
 }
 
 .badge-closed {
