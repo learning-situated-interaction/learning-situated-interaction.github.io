@@ -443,6 +443,11 @@ a.logistics-item:hover {
   gap: 24px;
 }
 
+.speaker-grid .card {
+  border: none;
+  background: transparent;
+}
+
 .speaker-grid .card-content {
   text-align: center;
 }
