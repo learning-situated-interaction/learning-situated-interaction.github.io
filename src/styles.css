@@ -413,9 +413,8 @@ a.logistics-item:hover {
 }
 
 .card {
-  background: white;
+  background: transparent;
   border-radius: 8px;
-  border: 1px solid var(--line);
   overflow: hidden;
 }
 
@@ -441,11 +440,6 @@ a.logistics-item:hover {
   grid-template-columns: repeat(3, minmax(0, 200px));
   justify-content: center;
   gap: 24px;
-}
-
-.speaker-grid .card {
-  border: none;
-  background: transparent;
 }
 
 .speaker-grid .card-content {
