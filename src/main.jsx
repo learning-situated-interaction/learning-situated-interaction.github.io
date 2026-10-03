@@ -182,7 +182,7 @@ function App() {
               <h2>Organizing Committee</h2>
             </div>
 
-            <div className="grid-layout">
+            <div className="grid-layout organizer-grid">
               <OrganizerCard 
                 name="Alane Suhr" 
                 affiliation="UC Berkeley" 

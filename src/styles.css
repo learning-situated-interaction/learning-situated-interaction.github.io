@@ -442,8 +442,19 @@ a.logistics-item:hover {
   gap: 24px;
 }
 
-.speaker-grid .card-content {
+.card-content {
   text-align: center;
+}
+
+/* Organizers: up to four per row, incomplete last row centered */
+.organizer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.organizer-grid .card {
+  width: 170px;
 }
 
 .card-content {
@@ -506,6 +517,7 @@ a.logistics-item:hover {
 @media (max-width: 480px) {
   .grid-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .speaker-grid { gap: 18px; }
+  .organizer-grid .card { width: calc(50% - 9px); }
 }
 
 .session-divider td {
