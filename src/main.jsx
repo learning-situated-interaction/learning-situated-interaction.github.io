@@ -134,7 +134,7 @@ function App() {
               <h2>Invited Speakers</h2>
             </div>
 
-            <div className="grid-layout">
+            <div className="grid-layout speaker-grid">
               <SpeakerCard 
                 name="Been Kim" 
                 affiliation="Google Deepmind" 
@@ -376,7 +376,7 @@ function ScheduleItem({ time, title, speaker, description }) {
 function SpeakerCard({ name, affiliation, imageUrl, website }) {
   return (
     <div className="card">
-      <img className="card-img" src={imageUrl || 'https://via.placeholder.com/400'} alt={name} />
+      <img className="card-img card-img-round" src={imageUrl || 'https://via.placeholder.com/400'} alt={name} />
       <div className="card-content">
         <h3 className="card-name">
           {website ? <a href={website} target="_blank" rel="noopener noreferrer">{name}</a> : name}
@@ -390,7 +390,7 @@ function SpeakerCard({ name, affiliation, imageUrl, website }) {
 function OrganizerCard({ name, affiliation, imageUrl, website }) {
   return (
     <div className="card">
-      <img className="card-img" src={imageUrl || 'https://via.placeholder.com/400'} alt={name} />
+      <img className="card-img card-img-round" src={imageUrl || 'https://via.placeholder.com/400'} alt={name} />
       <div className="card-content">
         <h3 className="card-name">
           {website ? <a href={website} target="_blank" rel="noopener noreferrer">{name}</a> : name}
