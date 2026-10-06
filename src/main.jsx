@@ -106,9 +106,8 @@ function App() {
                 <tr><td>9:45 – 10:30</td><td>Invited Talk: Been Kim</td></tr>
                 <tr><td>10:30 – 11:00</td><td>Coffee Break</td></tr>
                 <tr><td>11:00 – 12:15</td><td>Invited Talk: Heng Ji</td></tr>
-                <tr><td>12:15 – 1:15</td><td>Lunch Break</td></tr>
-                <tr className="session-divider"><td>1:15 – 2:00</td><td>Invited Talk: Prithviraj Ammanabrolu</td></tr>
-                <tr><td>2:00 – 2:45</td><td>Oral Presentations</td></tr>
+                <tr><td>12:15 – 1:45</td><td>Lunch Break</td></tr>
+                <tr className="session-divider"><td>1:45 – 2:45</td><td>Oral Presentations</td></tr>
                 <tr><td>2:45 – 3:15</td><td>Afternoon Break</td></tr>
                 <tr><td>3:15 – 4:00</td><td>Invited Talk: Diyi Yang</td></tr>
                 <tr><td>4:00 – 4:45</td><td>Invited Talk: Zora Wang</td></tr>
@@ -140,12 +139,6 @@ function App() {
                 affiliation="Google Deepmind" 
                 imageUrl="been_kim.png" 
                 website="https://beenkim.github.io/" 
-              />
-              <SpeakerCard
-                name="Prithviraj Ammanabrolu"
-                affiliation="UC San Diego, NVIDIA"
-                imageUrl="raj.jpg"
-                website="https://prithvirajva.com/"
               />
               <SpeakerCard
                 name="Noam Brown"

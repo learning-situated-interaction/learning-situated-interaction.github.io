@@ -436,10 +436,17 @@ a.logistics-item:hover {
 }
 
 /* Speakers: three per row, centered */
+/* Speakers: up to three per row, incomplete last row centered */
 .speaker-grid {
-  grid-template-columns: repeat(3, minmax(0, 200px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  max-width: 648px;
+}
+
+.speaker-grid .card {
+  width: 200px;
 }
 
 .card-content {
@@ -517,6 +524,7 @@ a.logistics-item:hover {
 @media (max-width: 480px) {
   .grid-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .speaker-grid { gap: 18px; }
+  .speaker-grid .card { width: calc(50% - 9px); }
   .organizer-grid .card { width: calc(50% - 9px); }
 }
 
