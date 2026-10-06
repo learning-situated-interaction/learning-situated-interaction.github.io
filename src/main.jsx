@@ -54,7 +54,7 @@ function App() {
             <p className="eyebrow">@COLM 2026 -- October 9, 2026 - San Francisco, CA</p>
             <h1>Learning from<br />Situated and Embodied Interaction</h1>
 
-            <p className="contact-line">Contact: colm2026.learning.interaction@gmail.com</p>
+            <p className="contact-line">Contact: terran@berkeley.edu</p>
 
             {/* Submissions and reviewer recruitment are closed.
             <div className="hero-actions hero-buttons">
